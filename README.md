@@ -3,6 +3,9 @@
 This project is a visualized dashboard for real-time monitoring of major tourist attractions in Seoul.  
 It displays key information such as floating population, weather, congestion levels, and more in an interactive, responsive interface.
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+
 # ⚙️ Tech Stack
 
 | Category | Stack |
