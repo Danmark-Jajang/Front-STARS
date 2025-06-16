@@ -10,8 +10,8 @@ export type UserProfile = {
     birth_year: number;
     mbti: string;
     gender: string;
-    current_password?: string; // Optional for when not changing password
-    new_password?: string; // Optional for when not changing password
+    current_password?: string;
+    new_password?: string;
 };
 
 export const getUserProfile = async () => {
@@ -32,11 +32,8 @@ export const editUserProfile = async (user: UserProfile) => {
         },
     };
 
-    // Clone user object to avoid modifying the original
     const userData = { ...user };
 
-    // If we don't have both current_password and new_password,
-    // delete them to indicate we're not changing the password
     if (!userData.current_password || !userData.new_password) {
         delete userData.current_password;
         delete userData.new_password;
